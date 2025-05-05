@@ -1,0 +1,128 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+nav ul li {
+	font-weight: bold;
+    margin: .5rem 0rem 0rem;
+	list-style: none;
+    color:  #3a80ab;
+    font-size: 1.2rem;
+	}
+
+    h1 {
+        max-width: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    a:visited {
+        color: #3a80ab;
+        padding: .5rem .5rem .5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color:#3a80ab;
+        }
+
+div.container {
+    /* background-color: #ffffff; */
+    max-width: 35em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h1 {
+	font-size: 3em;
+	width: 100;
+    color:  #3a80ab;
+	/* margin: .5rem 1rem .5rem; */
+	}
+
+h2, h3, h4 {
+		font-weight: bold;
+        color:  #3a80ab;
+	}
+
+
+h2 {
+	font-size: 4em;
+	margin: 3rem 0rem .5rem;
+	}
+	
+h3 {
+	font-size: 1.5em;
+    margin: 0rem 0rem .5rem;
+}
+
+h4 {
+	font-size: 1.1em;
+    margin: 0rem 0rem .5rem;
+    border-top: .1rem solid #3a80ab;
+    margin-top: 3rem;
+}
+
+p {
+	font-size: 1.2em;
+	margin: 0.5rem .5rem 0.5rem;
+}
+
+
+section.soccer {
+    background-color:  #fafafa;
+}
+/* main {
+    background-color: #d1d0fb;
+} */
+
+footer {
+    color:  #ffffff;
+    background-color: #4c789a;
+    margin: 2em 0em 0em;
+    box-sizing: border-box;
+    padding: .5rem 0rem .5rem;
+}
+
+img {
+    margin: 3em 0em 0em;
+}
+figcaption {
+    margin: .5em 0em 0em;
+}
+
+/* section.main {
+    background-color: #d1d0fb;
+} */
+
+aside {
+    background-color: #d1d0fb;
+}
+
+@media screen and (min-width:55em) {
+
+    div.container {
+        margin: auto;
+      }
+      /* textarea {
+        display: 100%;
+        width: 35em;
+      } */
+
+
+  ul {
+        display: flex;
+        flex: wrap;
+      }
+      nav ul li {
+        font-weight: bold;
+        margin: 1em 0rem 0rem 1rem;
+        list-style: none;
+        color:  #3a80ab;
+        font-size: 1.2rem;
+        }
+}

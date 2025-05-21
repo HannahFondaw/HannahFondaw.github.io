@@ -8,11 +8,14 @@ img {
 }
 
 nav ul li {
-	font-weight: bold;
     margin: .5rem 0rem 0rem;
 	list-style: none;
     color:  #3a80ab;
     font-size: 1.2rem;
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .05rem;
 	}
 
     h1 {
@@ -21,13 +24,16 @@ nav ul li {
     }
 
     a:visited {
-        color: #3a80ab;
+        color: #70859f;
         padding: .5rem .5rem .5rem;
     }
 
     a {
         text-decoration: none;
-        color:#3a80ab;
+        color:#70859f;
+        font-family: "catalpa", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         }
 
 div.container, div.home-container {
@@ -40,68 +46,105 @@ div.container, div.home-container {
 h1 {
 	font-size: 3em;
 	width: 100;
-    color:  #3a80ab;
-	/* margin: .5rem 1rem .5rem; */
+    color:  #232627;
+	margin: .5rem 1rem .5rem;
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 	}
 
 h2, h3, h4 {
-		font-weight: bold;
-        color:  #3a80ab;
+	font-weight: bold;
+    color:  #232627;
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 	}
 
+h2, h3, h4 p {
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0rem .5rem .5rem;
+}
 
 h2 {
-	font-size: 4em;
+    font-size: 3rem;
+}
+
+h2 p {
+	font-size: 3.5rem;
 	margin: 3rem 0rem .5rem;
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 	}
 	
-h3 {
+h3 p {
 	font-size: 1.5em;
-    margin: 0rem 0rem .5rem;
+    margin: .5rem 0rem .5rem;
+    color: #664c41;
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h4 {
 	font-size: 1.1em;
     margin: 0rem 0rem .5rem;
-    border-top: .1rem solid #3a80ab;
+    border-top: .1rem solid #664c41;
     margin-top: 3rem;
 }
 
 p {
 	font-size: 1.2em;
 	margin: 0.5rem .5rem 0.5rem;
+    color: #232627;
+    font-family: "proforma", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 section.soccer {
-    background-color:  #fafafa;
+    background-color:  #fff4e5;
 }
 /* main {
     background-color: #d1d0fb;
 } */
 
 footer {
-    color:  #ffffff;
-    background-color: #4c789a;
+    color:  #fff4e5;
+    background-color: #664c41;
     /* margin: 2em 0em 0em; */
     box-sizing: border-box;
     padding: .5rem 0rem .5rem;
 }
-
+footer p {
+    color: #fff4e5;
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    word-spacing: .2rem;
+    letter-spacing: .1rem;
+}
 /* img {
     margin: 3em 0em 3em;
 } */
 
 body {
     font-family: sans-serif;
+    background-color: #fff4e5;
 }
 
 figcaption {
     margin: .5em 0em 0em;
-    font-style: italic;
-    font-family: sans-serif;
     margin: .2rem .5rem 1em;
-    color: #888;
+    color: #70859f;
+    font-family: "proforma", serif;
+    font-weight: 400;
+    font-style: italic;
+
 }
 
 /* section.main {
@@ -109,8 +152,18 @@ figcaption {
 } */
 
 aside {
-    background-color: #d1d0fb;
+    background-color: #f18557;
+    padding: 0;
 }
+
+aside p {
+    color: #664c41;
+}
+
+section.tertiary p {
+    color: #664c41;
+}
+
 
 @media screen and (min-width:40em) {
 
@@ -132,7 +185,7 @@ aside {
         font-weight: bold;
         margin: 1em 0rem 0rem 1rem;
         list-style: none;
-        color:  #3a80ab;
+        color:  #70859f;
         font-size: 1.2rem;
         display: inline;
         }
@@ -146,6 +199,7 @@ div.home-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 1em;
+    background-color: #fff4e5;
 }
 
 
@@ -161,9 +215,8 @@ div.container{
 
 div.container aside{
 margin-top: 0;
+padding: 0;
 }
-
-
 
 
 header, footer {
@@ -182,12 +235,11 @@ padding: 0;
 margin-top: 0;
 }
 
-
 section.mainstory {
     grid-column: 2/4;
     grid-row: 1/3;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 section.mainstory a {
@@ -196,16 +248,20 @@ section.mainstory a {
     flex-direction: column;
 }
 
-/* section.mainstory figure {
+section.mainstory figure {
     display: flex;
     flex: 1 0 12em;
-    background: #ff0;
-} */
+    /* background: #ff0; */
+}
 
 section.mainstory a figure {
     flex: 1 0 12em;
     display: flex;
     background: #ff0;
+}
+
+section.mainstory figure img {
+    object-fit: cover;
 }
 
 
@@ -215,13 +271,22 @@ section.mainstory a figure img {
 
 section.mainstory a h2 {
     flex: 0 0 1em;
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 section.mainstory a p {
     flex: 0 0 4em;
+    color: #232627;
 }
 
 
+section.mainstory a p h2, h3, h4 {
+    font-family: "catalpa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
 
 
@@ -229,6 +294,7 @@ section.mainstory a p {
 
 section.secondary {
     display: flex;
+    flex-direction: column;
 }
 
 section.secondary a {
@@ -245,7 +311,6 @@ section.secondary figure {
 
 section.secondary a figure {
     flex: 1 0 12em;
-    background: #ff0;
     display: flex;
 }
 
@@ -259,6 +324,7 @@ section.secondary a h2 {
 
 section.secondary a p {
     flex: 0 0 4em;
+    color: #664c41;
 }
 
 }

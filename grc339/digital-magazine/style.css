@@ -8,9 +8,9 @@ img {
 }
 
 nav ul li {
-    margin: .5rem 0rem 0rem;
+   margin: .5rem 1rem .5rem;
 	list-style: none;
-    color:  #3a80ab;
+    color:  #70859f;
     font-size: 1.2rem;
     font-family: "catalpa", sans-serif;
     font-weight: 700;
@@ -20,6 +20,7 @@ nav ul li {
 
     h1 {
         max-width: 7rem;
+        /* width: 10em; */
         margin-bottom: 2rem;
     }
 
@@ -105,10 +106,6 @@ p {
     font-style: normal;
 }
 
-
-section.soccer {
-    background-color:  #fff4e5;
-}
 /* main {
     background-color: #d1d0fb;
 } */
@@ -153,7 +150,7 @@ figcaption {
 
 aside {
     background-color: #f18557;
-    padding: 0;
+    padding: 0em;
 }
 
 aside p {
@@ -163,7 +160,6 @@ aside p {
 section.tertiary p {
     color: #664c41;
 }
-
 
 
 
@@ -247,6 +243,7 @@ input {
     display: none;
 }
 }
+
 
 
 
@@ -358,7 +355,7 @@ section.subscribe ul{
 	margin: .5rem;
 	display: flex;
 	flex-wrap: wrap;
-	flex: 6 0 100%;
+	flex: 3 0 100%;
 }
 
 textarea {
@@ -522,6 +519,112 @@ section.secondary a h2 {
 
 section.secondary a p {
     flex: 0 0 4em;
+    color: #664c41;
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+
+div.container, div.home-container, div.photo-container,  div.news-container{
+    background-color: #232627;
+}
+
+h1 {  
+    background-image: url("logo-alt.svg");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+
+    color:  #fff4e5;
+    } 
+
+h1 img {  
+    opacity: 0;  
+    }  
+
+h2, h3, h4 {
+    color:  #f18557;
+}
+
+h3 p {
+    color: #f18557;
+}
+p {
+    color: #fff4e5;
+}
+
+h4 {
+    border-top: 3px solid #f18557;
+}
+
+figcaption {
+    color: #664c41;
+}
+
+aside {
+    background-color: #664c41;
+}
+
+aside p {
+    color: #f18557;
+}
+
+section.tertiary p {
+    color: #f18557;
+}
+
+div.photo-container {
+	color: #f18557;
+}
+
+html, body{
+    background: #232627;
+    color: #232627;
+}
+
+section.subscribe h2{
+    color: #fff4e5;
+}
+
+div.news-container h2{
+    color: #fff4e5;
+}
+
+nav ul li {
+    color:  #664c41;
+	}
+
+a:visited {
+     color: #664c41;
+    }
+
+ a {
+    color:#664c41;
+    }
+
+section.secondary a p {
+    color: #70859f;
+}
+
+div.container footer {
+    background-color: #70859f;
+}
+
+div.container footer p {
+    color: #232627;
+}
+
+div.photo-container footer {
+    background-color: #f18557;
+}
+
+div.photo-container footer p {
     color: #664c41;
 }
 
